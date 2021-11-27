@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New User</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body  class="add_user">
+    
+    <h1>Add New Users Details</h1>
+    <form action="" method="post">
+        <label>NAME : </label>
+        <input type="text" name="name" autocomplete="off" required><br><br>
+        <label>AGE : </label>
+        <input type="text" name="age" autocomplete="off" required><br><br>
+        <label>CITY : </label>
+        <input type="text" name="city" autocomplete="off" required><br><br>
+        <input type="submit" value="SAVE">
+
+    </form>
+</body>
+</html>

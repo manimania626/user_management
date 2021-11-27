@@ -1,0 +1,138 @@
+*{
+	margin:0px;
+	padding:0px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html{
+	background:rgb(190, 190, 190);
+}
+
+body{
+	background:#000000;
+	width:auto;
+	height: auto;;
+	margin: auto;
+	padding: 50px;
+	border-radius: 10px;
+	margin: 20px;
+	font-family:roboto;
+	color:#ffffff;
+}
+h1{
+	text-align:center; 
+	border-bottom:4px solid grey;
+	font-family:sans-serif;
+	font: bold;
+	top: 2px;
+	padding:20px;
+	margin-bottom:25px;
+	color:#ffffff;
+}
+table{
+	width:100%;
+	border-collapse: collapse;
+	margin-top:25px;	
+}
+tr td,tr th{
+	border:2px solid rgb(190, 190, 190);
+	padding:10px;
+	
+}
+tr th{
+border:none;
+background:rgb(190, 190, 190);
+border:2px solid rgb(190, 190, 190);
+color:black;
+font-weight: bold;
+
+}
+a,input[type=submit]{
+padding:8px;
+color:white;
+background:rgb(190, 190, 190);
+border-radius:5px;
+border:none;
+
+}
+input[type=submit]{
+background:rgb(231, 0, 0);
+font-size:15px;
+color: white;
+font-weight: bold;
+margin-left: 80%;
+}
+input[type=text]{
+border:1px solid grey;
+height:20px;
+width:300px;
+display:block;
+background:rgb(190, 190, 190);
+margin-top:15px;
+font-size:15px;
+padding:5px;
+border-radius: 5px;
+}
+
+label{
+display:block;
+margin:0 auto;
+margin-top:15px;
+font-size:20px;
+color:rgb(129, 216, 209);
+font-weight:bold;
+font-family: sans-serif;
+}
+p a{
+	background:rgba(190, 190, 190);
+	color: black;
+	font: bold;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+	
+table td:nth-child(5) a{
+background:#2600ff;
+text-decoration:none;
+padding:5px 30px 5px 30px ;
+}
+table td:nth-child(6) a{
+background:#ff0000;
+text-decoration:none;
+padding:5px 30px 5px 30px ;
+}
+h4{
+text-align:right;
+color:#1ae000;
+font-size: 20px;
+font-family: monospace;
+}
+#hideMe {
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 5s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}
+.add_user{
+	margin-top: 5%;
+	margin-bottom: 15%;
+	margin-left: 20%;
+	margin-right: 20%;
+}

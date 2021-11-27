@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<h1>Web Application CRUD Using Python, Flask and MySQL</h1>
+<body>
+    <p><a href=" {{url_for('addUsers')}} " >Add Users</a></p>
+    <h4 id="hideMe">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    {{ message }}
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </h4>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>CITY</th>
+            <th>EDIT</th>
+            <th>DELETE</th>
+        </tr>
+        {% for data in datas %}
+        <tr>
+            <td>{{ data.ID }}</td>
+            <td>{{ data.NAME }}</td>
+            <td>{{ data.AGE }}</td>
+            <td>{{ data.CITY }}</td>
+            <td><a href=" {{url_for('editUser',id=data.ID)}} ">Edit Me</a></td>
+            <td><a onclick="return confirm('Are you sure to delete?');" href=" {{url_for('deleteUser',ID=data.ID)}} ">Delete Me</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+</body>
+</html>
